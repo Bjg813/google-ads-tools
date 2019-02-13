@@ -26,3 +26,9 @@ input {
     margin: 0 0% 0 3%;
 }
 
+@media screen and (min-width: 1400px) {
+    .headline > div:nth-last-child(1) {
+        margin-left: 16.8%;
+    }
+  }
+
