@@ -8,3 +8,10 @@
 .keyword-output {
     margin: 2% 30% 0 30%;
 }
+
+
+@media screen and (min-width: 1400px) {
+    .keyword-love-input {
+        margin: 0 1% 0 38%;
+    }
+  }
