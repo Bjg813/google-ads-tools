@@ -1,0 +1,28 @@
+.clients-budget {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+.client div {
+    display: inline-block;
+    padding: 0 4%;
+    width: 10px;
+    margin: 0 5%;
+}
+
+.headline div {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.headline > div:nth-last-child(1){
+    margin-left: 24.8%;
+}
+
+
+input {
+    text-align: center;
+    margin: 0 0% 0 3%;
+}
+

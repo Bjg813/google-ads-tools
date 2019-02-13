@@ -1,0 +1,26 @@
+:root {
+    --main-color: #0084a5;
+    --uptown-color: #a50031;
+}
+
+body, span {
+    font-family: 'Lato', sans-serif;
+}
+
+h2, p {
+    color: black;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.bg-primary {
+    background-color: var(--main-color);
+    margin-top: -18px;
+    padding: 5% 0;
+}
+
+.bg-secondary {
+    background-color: var(--uptown-color);
+    padding: 5% 0;
+}
