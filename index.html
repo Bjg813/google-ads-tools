@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="svg" href="images/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="css/monthly-billable-minutes.css">
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <link rel="stylesheet" type="text/css" href="css/clients-budget.css">
-    <link rel="stylesheet" type="text/css" href="css/keyword-love.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Document</title>
+    <title>Sacramento | Uptown Studios | Google Ads Tool</title>
 </head>
 <body>
 <section class="bg-primary">
@@ -33,76 +34,48 @@
         <div>AmpacAnalytical</div>
         <div>Shared</div>
         <div>$1,700</div>
-        <input id="costInputAmpacAnalytical" type="number" placeholder="Cost Input">
+        <input id="costInputAmpacAnalytical" type="number" placeholder="Ampac Analytical">
         <button onclick="buttonAmpacAnalytical()">New Budget</button>
         <div id="adjustBudgetAmpacAnalytical"></div>
     </div>
-
-    <div class="client">
-        <div>AmpacFineChemicals</div>
-        <div>Shared</div>
-        <div>$1,700</div>
-        <input id="costInputAmpacFineChemicals" type="number" placeholder="Cost Input">
-        <button onclick="buttonAmpacFineChemicals()">New Budget</button>
-        <div id="adjustBudgetAmpacFineChemicals"></div>
-    </div>
-
-    <div class="client">
-        <div>ComdeySpot</div>
-        <div>Shared</div>
-        <div>$500.00</div>
-        <input id="costInputComedySpot" type="number" placeholder="Cost Input">
-        <button onclick="buttonComedySpot()">New Budget</button>
-        <div id="adjustBudgetComedySpot"></div>
-    </div>
-
     <div class="client">
         <div>StanfordYouth</div>
         <div>Shared</div>
-        <div>$213.00</div>
-        <input id="costInputStanfordYouthShared" type="number" placeholder="Cost Input">
+        <div>$149.00</div>
+        <input id="costInputStanfordYouthShared" type="number" placeholder="Stanford Youth Share">
         <button onclick="buttonStanfordYouthShared()">New Budget</button>
         <div id="adjustBudgetStanfordYouthShared"></div>
         </div>
-
     <div class="client">
         <div>StanfordYouth</div>
         <div>NotShared</div>
         <div>$285.00</div>
-        <input id="costInputStanfordYouthNotShared" type="number" placeholder="Cost Input">
+        <input id="costInputStanfordYouthNotShared" type="number" placeholder="Stanford Youth NotSh">
         <button onclick="buttonStanfordYouthNotShared()">New Budget</button>
         <div id="adjustBudgetStanfordYouthNotShared"></div>
     </div>
-
     <div class="client">
         <div>CETPA</div>
         <div>Shared</div>
         <div>$500.00</div>
-        <input id="costInputCETPA" type="number" placeholder="Cost Input">
+        <input id="costInputCETPA" type="number" placeholder="CETPA">
         <button onclick="buttonCETPA()">New Budget</button>
         <div id="adjustBudgetCETPA"></div>
     </div>
 </section>
-<!-- keyword love -->
-<section class="bg-primary">
-    <h2>Keyword Healer</h2>
-    <div class="keywordFilter">
-        <textarea class="keyword-love-input" id="keywordInput" type="text" rows="10" placeholder="Enter Keywords"></textarea>
-        <button onclick="keywordLover()">Heal Me</button>
-        <h2>Healed Keywords</h2>
-        <div class="keyword-output" id="keywordOutput"></div>
-    </div>
+
+<section>
+    <h2>Headline Capitalize Converter</h2>
+    <input id="capitalizeInput" type="text" placeholder="PasteHeadline">
+    <button onclick="capitalizeMachine()">Capitalize</button>
+    <div id="capitalizeOutput"></div>
 </section>
-
-
     <script src="js/script.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/ampacAnalytical.js"></script>
-    <script src="js/ampacFineChemicals.js"></script>
-    <script src="js/comedySpot.js"></script>
     <script src="js/stanfordYouthShared.js"></script>
     <script src="js/stanfordYouthNotShared.js"></script>
     <script src="js/cetpa.js"></script>
-    <script src="js/keywordLover.js"></script>
+    <script src="js/capitalizeMachine.js"></script>
 </body>
 </html>

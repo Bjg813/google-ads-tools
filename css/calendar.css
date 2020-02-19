@@ -18,3 +18,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 1050px) {
+    .calendar { 
+        margin: 0 40% 0 40%;
+    }
+}

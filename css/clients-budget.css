@@ -26,9 +26,19 @@ input {
     margin: 0 0% 0 3%;
 }
 
+.adjust-budget {
+    margin: 0 5% 0 0;
+}
+
 @media screen and (min-width: 1400px) {
     .headline > div:nth-last-child(1) {
         margin-left: 16.8%;
     }
   }
+
+  @media screen and (max-width: 1050px) {
+    .client div {
+        margin: 0 4%;
+  }
+}
 

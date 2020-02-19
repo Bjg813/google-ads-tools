@@ -1,0 +1,13 @@
+
+.container-centered {
+    margin: 0 0 0 40%;
+    display: flex;
+}
+
+div#calculatedMinutes {
+    margin: 0 0 0 2%;
+}
+
+.button-right-margin {
+    margin: 0 0 0 1%;
+}
