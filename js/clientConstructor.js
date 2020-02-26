@@ -2,28 +2,35 @@
 function GoogleAdsClient(params) {
     this.monthlyBudget = params.monthlyBudget;
     this.costInput = params.costInput;
-    this.adjustBudget = function() {
-        return (this.monthlyBudget - this.costInput) / daysLeftInMonth();
-    };
-    this.roundNumber = function() {
-        return Math.round(this.adjustBudget * 100) / 100;
-    };
 }
 
+// Create adjustBudget prototype
+GoogleAdsClient.prototype.adjustBudget = function() {
+    return Math.round((this.monthlyBudget - this.costInput) / daysLeftInMonth() * 100) / 100;
+};
+
 // Cetpa Parameters - monthlyBudget, costInput
-const cetpaParams = {
-    monthlyBudget: 500,
-    costInput: document.getElementById("costInputCETPA").value
+let cetpaParams = {
+    monthlyBudget: 1700,
+    costInput: document.getElementById("costInputAmpacAnalytical").value
 };
 
 // Create a new constructor for cetpa client
-const cetpa = new GoogleAdsClient(cetpaParams);
+let cetpa = new GoogleAdsClient(cetpaParams);
 
 // List clients
-const clients = [cetpa];
+let clients = [cetpa];
 
 // Iterate through the clients
-for (let i = 0; i < clients.length; i++) {
-    clients[i].adjustBudget;
-    clients[i].roundNumber;
+const budgetAdjuster = function() {
+    for (let i = 0; i < clients.length; i++) {
+        console.log(clients[i].adjustBudget());
+    }
 }
+
+const displayBudget = function() {
+    document.getElementById('displayBudget').innerHTML = budgetAdjuster();
+}
+
+// Add event listener for brwoser to register the new budget button
+document.getElementById('newBudgetButton').addEventListener('click', displayBudget);
