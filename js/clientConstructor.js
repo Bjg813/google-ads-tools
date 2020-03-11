@@ -1,36 +1,74 @@
-// Google Ads Client constructor
+// Client Constructor
 function GoogleAdsClient(params) {
-    this.monthlyBudget = params.monthlyBudget;
-    this.costInput = params.costInput;
-}
-
-// Create adjustBudget prototype
-GoogleAdsClient.prototype.adjustBudget = function() {
-    return Math.round((this.monthlyBudget - this.costInput) / daysLeftInMonth() * 100) / 100;
-};
-
-// Cetpa Parameters - monthlyBudget, costInput
-let cetpaParams = {
-    monthlyBudget: 1700,
-    costInput: document.getElementById("costInputAmpacAnalytical").value
-};
-
-// Create a new constructor for cetpa client
-let cetpa = new GoogleAdsClient(cetpaParams);
-
-// List clients
-let clients = [cetpa];
-
-// Iterate through the clients
-const budgetAdjuster = function() {
-    for (let i = 0; i < clients.length; i++) {
-        console.log(clients[i].adjustBudget());
+    this.currentCost = params.currentCost;
+    this.monthlyCost = params.monthlyCost;
+    this.viewId = params.viewId;
+    this.displayMessage = function(msg) {
+        let messageArea = this.viewId;
+        messageArea.innerHTML = msg;
     }
 }
 
-const displayBudget = function() {
-    document.getElementById('displayBudget').innerHTML = budgetAdjuster();
+GoogleAdsClient.prototype.processBudget = function() {
+    let budgetDifference = this.monthlyCost - this.currentCost;
+    let averageMonthlySpend = budgetDifference / daysLeftInMonth();
+    this.monthlyCost = Math.round(averageMonthlySpend * 100) / 100;
+    this.displayMessage(this.monthlyCost);
 }
 
-// Add event listener for brwoser to register the new budget button
-document.getElementById('newBudgetButton').addEventListener('click', displayBudget);
+let stanfordYouthParams = {
+    currentCost: document.getElementById('costInputStanfordYouthShared').value,
+    monthlyCost: document.getElementById('stanfordMonthlyCost').innerHTML,
+    viewId: document.getElementById('displayStanfordYouthBudget')
+}
+
+let stanfordYouthSolutions = new GoogleAdsClient(stanfordYouthParams);
+
+let clients = [stanfordYouthSolutions];
+
+function balanceBudget() {
+    for (let i = 0; i < clients.length; i++) {
+        clients[i].processBudget();
+    }
+}
+
+function init() {
+    let submitButton = document.getElementById('stanfordYouthSubmitButton');
+    submitButton.onclick = balanceBudget;
+}
+
+window.onload = init;
+
+// // View
+// const view = {
+//     displayMessage: function(msg) {
+//         let messageArea = document.getElementById('displayBudget');
+//         messageArea.innerHTML = msg;
+//     }
+// }
+
+// // Controller
+// const controller = {
+//     percentage: 100,
+//     processBudget: function(currentCost, monthlyCost) {
+//         let budgetDifference = monthlyCost - currentCost;
+//         let averageMonthlySpend = budgetDifference / daysLeftInMonth();
+//         monthlyCost = Math.round(averageMonthlySpend * this.percentage) / 100;
+//         view.displayMessage(monthlyCost) 
+//     }
+// }
+
+// function balanceBudget() {
+//     let currentCostInput = document.getElementById('costInputAmpacAnalytical');
+//     let currentCost = currentCostInput.value;
+//     let monthlyCost = document.getElementById('ampacMonthlyBudget').innerHTML;
+//     controller.processBudget(currentCost, monthlyCost);
+// } 
+
+// init
+// function init() {
+//     let submitButton = document.getElementById('newBudgetButton');
+//     submitButton.onclick = balanceBudget;
+// }
+
+// window.onload = init;

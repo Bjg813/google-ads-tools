@@ -24,3 +24,8 @@ h2, p {
     background-color: var(--uptown-color);
     padding: 2% 0;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
