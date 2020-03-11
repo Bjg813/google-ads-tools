@@ -10,17 +10,17 @@ function GoogleAdsClient(params) {
 }
 
 GoogleAdsClient.prototype.processBudget = function() {
-    let budgetDifference = this.monthlyCost - this.currentCost;
+    let budgetDifference = this.monthlyCost - document.getElementById(this.currentCost).value;
     let averageMonthlySpend = budgetDifference / daysLeftInMonth();
     this.monthlyCost = Math.round(averageMonthlySpend * 100) / 100;
     this.displayMessage(this.monthlyCost);
 }
 
 let stanfordYouthParams = {
-    currentCost: document.getElementById('costInputStanfordYouthShared').value,
     monthlyCost: document.getElementById('stanfordMonthlyCost').innerHTML,
+    currentCost: 'costInputStanfordYouthShared',
     viewId: document.getElementById('displayStanfordYouthBudget')
-}
+};
 
 let stanfordYouthSolutions = new GoogleAdsClient(stanfordYouthParams);
 
@@ -38,6 +38,13 @@ function init() {
 }
 
 window.onload = init;
+
+
+
+
+
+
+
 
 // // View
 // const view = {
