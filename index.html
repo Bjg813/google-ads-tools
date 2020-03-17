@@ -33,42 +33,31 @@
     <div class="client">
         <div>AmpacAnalytical</div>
         <div>Shared</div>
-        <div id="ampacMonthlyBudget">1700</div>
+        <div id="ampacMonthlyCost">1700</div>
         <input id="costInputAmpacAnalytical" type="number" placeholder="Ampac Analytical">
-        <button id="newBudgetButton">New Budget</button>
-        <div id="displayBudget"></div>
+        <div id="displayAmpacAnalytical"></div>
     </div>
     <div class="client">
         <div>StanfordYouth</div>
         <div>Shared</div>
         <div id="stanfordMonthlyCost">434</div>
         <input id="costInputStanfordYouthShared" type="number" placeholder="Stanford Youth Share">
-        <button id="stanfordYouthSubmitButton">New Budget</button>
-        <div id="displayStanfordYouthBudget"></div>
+        <div id="displayStanfordYouth"></div>
         </div>
     <div class="client">
-        <div>StanfordYouth</div>
-        <div>NotShared</div>
-        <div>$285.00</div>
-        <input id="costInputStanfordYouthNotShared" type="number" placeholder="Stanford Youth NotSh">
-        <button onclick="buttonStanfordYouthNotShared()">New Budget</button>
-        <div id="adjustBudgetStanfordYouthNotShared"></div>
-    </div>
-    <div class="client">
-        <div>CETPA</div>
+        <div>CITE</div>
         <div>Shared</div>
-        <div>$500.00</div>
-        <input id="costInputCETPA" type="number" placeholder="CETPA">
-        <button onclick="buttonCETPA()">New Budget</button>
-        <div id="adjustBudgetCETPA"></div>
+        <div id="citeMonthlyCost">500</div>
+        <input id="costInputCite" type="number" placeholder="CITE">
+        <div id="displayCite"></div>
     </div>
+    <button id="newBudgetButton">New Budget</button>
 </section>
 
 <section>
     <h2>Headline Capitalize Converter</h2>
     <div class="flex-container">
         <input id="capitalizeInput" type="text" placeholder="PasteHeadline">
-        <button onclick="capitalizeMachine()">Capitalize</button>
         <div id="capitalizeOutput"></div>
     </div>
 </section>
@@ -77,7 +66,6 @@
     <h2>Broad Match Modifier Machine</h2>
     <div class="flex-container">
         <input id="broadMatchModifierInput" type="text" placeholder="Paste Broad Match Keyword">
-        <button onclick="broadMatchModifier()">Modify</button>
         <div id="broadMatchModifierOutput"></div>
     </div>
 </section>
