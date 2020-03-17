@@ -33,18 +33,18 @@
     <div class="client">
         <div>AmpacAnalytical</div>
         <div>Shared</div>
-        <div>$1,700</div>
+        <div id="ampacMonthlyBudget">1700</div>
         <input id="costInputAmpacAnalytical" type="number" placeholder="Ampac Analytical">
-        <button onclick="buttonAmpacAnalytical()">New Budget</button>
-        <div id="adjustBudgetAmpacAnalytical"></div>
+        <button id="newBudgetButton">New Budget</button>
+        <div id="displayBudget"></div>
     </div>
     <div class="client">
         <div>StanfordYouth</div>
         <div>Shared</div>
-        <div>$149.00</div>
+        <div id="stanfordMonthlyCost">434</div>
         <input id="costInputStanfordYouthShared" type="number" placeholder="Stanford Youth Share">
-        <button onclick="buttonStanfordYouthShared()">New Budget</button>
-        <div id="adjustBudgetStanfordYouthShared"></div>
+        <button id="stanfordYouthSubmitButton">New Budget</button>
+        <div id="displayStanfordYouthBudget"></div>
         </div>
     <div class="client">
         <div>StanfordYouth</div>
@@ -66,9 +66,20 @@
 
 <section>
     <h2>Headline Capitalize Converter</h2>
-    <input id="capitalizeInput" type="text" placeholder="PasteHeadline">
-    <button onclick="capitalizeMachine()">Capitalize</button>
-    <div id="capitalizeOutput"></div>
+    <div class="flex-container">
+        <input id="capitalizeInput" type="text" placeholder="PasteHeadline">
+        <button onclick="capitalizeMachine()">Capitalize</button>
+        <div id="capitalizeOutput"></div>
+    </div>
+</section>
+
+<section>
+    <h2>Broad Match Modifier Machine</h2>
+    <div class="flex-container">
+        <input id="broadMatchModifierInput" type="text" placeholder="Paste Broad Match Keyword">
+        <button onclick="broadMatchModifier()">Modify</button>
+        <div id="broadMatchModifierOutput"></div>
+    </div>
 </section>
     <script src="js/script.js"></script>
     <script src="js/calendar.js"></script>
@@ -77,5 +88,9 @@
     <script src="js/stanfordYouthNotShared.js"></script>
     <script src="js/cetpa.js"></script>
     <script src="js/capitalizeMachine.js"></script>
+    <script src="js/clientConstructor.js"></script>
+    <script src="js/broadMatchModifierMachine.js"></script>
 </body>
 </html>
+
+
