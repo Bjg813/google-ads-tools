@@ -11,7 +11,7 @@ function GoogleAdsClient(params) {
     this.displayMessage = function(msg) {
         let messageArea = this.viewId;
         messageArea.innerHTML = msg;
-    }
+    };
 }
 
 // Client Constructor prototype method
@@ -41,13 +41,34 @@ const citeParams = {
     viewId: documentId('displayCite')
 };
 
+const ddsoParams = {
+    monthlyCost: documentId('ddsoMonthlyCost').innerHTML,
+    currentCost: 'costInputDdso',
+    viewId: documentId('displayDdso')
+};
+
+const censusParams = {
+    monthlyCost: documentId('censusMonthlyCost').innerHTML,
+    currentCost: 'costInputCensus',
+    viewId: documentId('displayCensus')
+};
+
+const rioHondoParams = {
+    monthlyCost: documentId('rioHondoMonthlyCost').innerHTML,
+    currentCost: 'costInputRioHondo',
+    viewId: documentId('displayRioHondo')
+};
+
 // Create new constructor objects
 const ampacAnalytical = new GoogleAdsClient(ampacAnalyticalParams);
 const stanfordYouthSolutions = new GoogleAdsClient(stanfordYouthParams);
 const cite = new GoogleAdsClient(citeParams);
+const ddso = new GoogleAdsClient(ddsoParams);
+const census2020 = new GoogleAdsClient(censusParams);
+const rioHondo = new GoogleAdsClient(rioHondoParams);
 
 // Save client constructor objects in array
-const clients = [ampacAnalytical, stanfordYouthSolutions, cite];
+const clients = [ampacAnalytical, stanfordYouthSolutions, cite, ddso, census2020, rioHondo];
 
 // Iterate through the clients array and run the processBudget prototype method
 function balanceBudget() {

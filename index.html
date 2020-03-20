@@ -51,6 +51,27 @@
         <input id="costInputCite" type="number" placeholder="CITE">
         <div id="displayCite"></div>
     </div>
+    <div class="client">
+        <div>DDSO</div>
+        <div>Shared</div>
+        <div id="ddsoMonthlyCost">840</div>
+        <input id="costInputDdso" type="number" placeholder="DDSO">
+        <div id="displayDdso"></div>
+    </div>
+    <div class="client">
+        <div>Census</div>
+        <div>Shared</div>
+        <div id="censusMonthlyCost">500</div>
+        <input id="costInputCensus" type="number" placeholder="Census">
+        <div id="displayCensus"></div>
+    </div>
+    <div class="client">
+        <div>Rio</div>
+        <div>Shared</div>
+        <div id="rioHondoMonthlyCost">869</div>
+        <input id="costInputRioHondo" type="number" placeholder="Rio Hondo">
+        <div id="displayRioHondo"></div>
+    </div>
     <button id="newBudgetButton">New Budget</button>
 </section>
 
@@ -59,6 +80,7 @@
     <div class="flex-container">
         <input id="capitalizeInput" type="text" placeholder="PasteHeadline">
         <div id="capitalizeOutput"></div>
+        <button onclick="capitalizeMachine()">Submit</button>
     </div>
 </section>
 
@@ -67,6 +89,7 @@
     <div class="flex-container">
         <input id="broadMatchModifierInput" type="text" placeholder="Paste Broad Match Keyword">
         <div id="broadMatchModifierOutput"></div>
+        <button onclick="broadMatchModifier()">Submit</button>
     </div>
 </section>
     <script src="js/script.js"></script>
