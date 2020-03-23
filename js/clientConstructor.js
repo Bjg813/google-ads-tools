@@ -59,7 +59,7 @@ const rioHondoParams = {
     viewId: documentId('displayRioHondo')
 };
 
-// Create new constructor objects
+// Create new client constructor objects
 const ampacAnalytical = new GoogleAdsClient(ampacAnalyticalParams);
 const stanfordYouthSolutions = new GoogleAdsClient(stanfordYouthParams);
 const cite = new GoogleAdsClient(citeParams);
@@ -67,10 +67,10 @@ const ddso = new GoogleAdsClient(ddsoParams);
 const census2020 = new GoogleAdsClient(censusParams);
 const rioHondo = new GoogleAdsClient(rioHondoParams);
 
-// Save client constructor objects in array
+// Save client constructor objects into an array
 const clients = [ampacAnalytical, stanfordYouthSolutions, cite, ddso, census2020, rioHondo];
 
-// Iterate through the clients array and run the processBudget prototype method
+// Iterate through the clients array and run the processBudget GoogleAdsClient prototype method
 function balanceBudget() {
     for (let i = 0; i < clients.length; i++) {
         clients[i].processBudget();

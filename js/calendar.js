@@ -59,15 +59,6 @@ function daysLeftInMonth() {
     return daysInMonth()-todaysDate();
 }
 
-// th & st
-// function stAndTh() {
-//     if(todaysDate() < 20) {
-//         return 'th';
-//     } else {
-//         return 'st';
-//     }
-// }
-
 document.getElementById('todaysDate').innerHTML = todaysMonth() + " " + todaysDate();
 document.getElementById('daysInMonth').innerHTML = daysInMonth();
 document.getElementById('daysLeftInMonth').innerHTML = daysLeftInMonth();
