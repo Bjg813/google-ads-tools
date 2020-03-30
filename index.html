@@ -78,13 +78,28 @@
     <h2>EOM Template</h2>
     <h3>Paid Account</h3>
     <input id="paidMonthInput" type="text" placeholder="Month">
+    <input id="paidAdImpressionsInput" type="text" placeholder="Impressions">
+    <input id="paidAdImpressionPercentageInput" type="text" placeholder="Impression Percentage">
+    <input id="paidAdClicksInput" type="text" placeholder="Ad Clicks">
+    <input id="paidAdClicksPercentageInput" type="text" placeholder="Ad Click Percentage">
+    <input id="paidCTR" type="text" placeholder="CTR">
     <input id="paidConversionsInput" type="text" placeholder="Conversions">
+    <input id="paidConversionsPercentageInput" type="text" placeholder="Conversion Percentage">
     <input id="paidPhoneCallsInput" type="text" placeholder="Phone Calls">
+    <input id="paidPhoneCallsPercentageInput" type="text" placeholder="Phone Calls Percentage">
     <input id="paidTopKeywordInput" type="text" placeholder="Top Keyword">
     <input id="paidTopKeywordClicksInput" type="text" placeholder="Top Keyword Clicks">
     <input id="paidTopAdCopyInput" type="text" placeholder="Top Ad Copy">
     <input id="paidTopAdClicksInput" type="text" placeholder="Paid Top Clicks">
     <button id="paidEomSubmitButton" onclick="eomReport()">Submit EOM Report</button>
+    <h3>EOM Stats</h3>
+    <p>Your ads were clicked on <span id="paidStatsAdClicksOutput"></span> times, up <span id="paidStatsAdClickPercentage"></span>%</p>
+    <p>Your ads were shown <span id="paidStatsAdImpressions"></span> times, up <span id="paidStatsAdImpressionPercentage"></span>%</p>
+    <p>Your average click-through rate was <span id="paidStatsCTR"></span>%</p>
+    <p>Your ads generated <span id="paidStatsAdConversions"></span> conversions, up <span id="paidStatsAdConversionsPercentage"></span>%</p>
+    <p>Your ads generated <span id="paidStatsAdPhoneCalls"></span> phone calls, up <span id="paidStatsAdPhoneCallsPercentage"></span>%</p>
+
+    <h3>EOM Message Report</h3>
     <p id="paidEomOutput"></p>
 </section>
 <section class="bg-secondary">
