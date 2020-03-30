@@ -74,8 +74,20 @@
     </div>
     <button id="newBudgetButton">New Budget</button>
 </section>
-
-<section>
+<section class="bg-primary">
+    <h2>EOM Template</h2>
+    <h3>Paid Account</h3>
+    <input id="paidMonthInput" type="text" placeholder="Month">
+    <input id="paidConversionsInput" type="text" placeholder="Conversions">
+    <input id="paidPhoneCallsInput" type="text" placeholder="Phone Calls">
+    <input id="paidTopKeywordInput" type="text" placeholder="Top Keyword">
+    <input id="paidTopKeywordClicksInput" type="text" placeholder="Top Keyword Clicks">
+    <input id="paidTopAdCopyInput" type="text" placeholder="Top Ad Copy">
+    <input id="paidTopAdClicksInput" type="text" placeholder="Paid Top Clicks">
+    <button id="paidEomSubmitButton" onclick="eomReport()">Submit EOM Report</button>
+    <p id="paidEomOutput"></p>
+</section>
+<section class="bg-secondary">
     <h2>Headline Capitalize Converter</h2>
     <div class="flex-container">
         <input id="capitalizeInput" type="text" placeholder="PasteHeadline">
@@ -84,7 +96,7 @@
     </div>
 </section>
 
-<section>
+<section class="bg-secondary">
     <h2>Broad Match Modifier Machine</h2>
     <div class="flex-container">
         <input id="broadMatchModifierInput" type="text" placeholder="Paste Broad Match Keyword">
@@ -92,6 +104,7 @@
         <button onclick="broadMatchModifier()">Submit</button>
     </div>
 </section>
+<script src="scripts/eomPaidTemplate.js"></script>
     <script src="js/script.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/ampacAnalytical.js"></script>
@@ -101,6 +114,7 @@
     <script src="js/capitalizeMachine.js"></script>
     <script src="js/clientConstructor.js"></script>
     <script src="js/broadMatchModifierMachine.js"></script>
+    <script src="js/eomPaidTemplate.js"></script>
 </body>
 </html>
 
