@@ -46,7 +46,3 @@ function eomReport() {
     document.getElementById('fourthTopKeyword').innerHTML = fourthTopKeyword;
     document.getElementById('fourthTopKeywordClicks').innerHTML = fourthTopKeywordClicks;
 }
-
-function eomMonth() {
-    return todaysMonth();
-}
