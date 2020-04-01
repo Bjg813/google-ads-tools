@@ -1,8 +1,7 @@
 const now = new Date();
 
 // Month
-function todaysMonth() {
-    let month;
+function todaysMonth(month) {
     let monthNum =  now.getMonth();
     switch (monthNum) {
         case 0:

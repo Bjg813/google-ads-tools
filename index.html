@@ -78,30 +78,41 @@
     <h2>EOM Template</h2>
     <div class="vertical-alignment">
         <input id="grantsMonthSpend" type="text" placeholder="Grant Spend">
-        <input id="grantMonthSpendPercentage" type="text" placeholder="Grant Spend %">
+        <input id="grantMonthSpendPercentage" type="text" placeholder="Up/Down Spend %">
         <input id="paidMonthInput" type="text" placeholder="Month">
         <input id="paidAdImpressionsInput" type="text" placeholder="Impressions">
-        <input id="paidAdImpressionPercentageInput" type="text" placeholder="Impression %">
+        <input id="paidAdImpressionPercentageInput" type="text" placeholder="Up/Down Impression %">
         <input id="paidAdClicksInput" type="text" placeholder="Ad Clicks">
         <input id="paidAdClicksPercentageInput" type="text" placeholder="Ad Click %">
         <input id="paidCTR" type="text" placeholder="CTR">
         <input id="paidConversionsInput" type="text" placeholder="Conversions">
-        <input id="paidConversionsPercentageInput" type="text" placeholder="Conversion %">
+        <input id="paidConversionsPercentageInput" type="text" placeholder="Up/Down Conversion %">
         <input id="paidTopKeywordInput" type="text" placeholder="Top Keyword">
         <input id="paidTopKeywordClicksInput" type="text" placeholder="Top Keyword Clicks">
         <input id="paidTopAdCopyInput" type="text" placeholder="Top Ad Copy">
+        <input id="paidTopAdCopyDescriptionInput" type="text" placeholder="Top Ad Copy Desciption">
         <input id="paidTopAdClicksInput" type="text" placeholder="Paid Top Clicks">
+        <input id="secondTopKeywordInput" type="text" placeholder="2nd Top Keyword">
+        <input id="secondTopKeywordClicksInput" type="text" placeholder="2nd Top Keyword Clicks">
+        <input id="thirdTopKeywordInput" type="text" placeholder="3rd Top Keyword">
+        <input id="thirdTopKeywordClicksInput" type="text" placeholder="3rd Top Keyword Clicks">
+        <input id="fourthTopKeywordInput" type="text" placeholder="4th Top Keyword">
+        <input id="fourthTopKeywordClicksInput" type="text" placeholder="4th Top Keyword Clicks">
         <button  id="paidEomSubmitButton" onclick="eomReport()">Submit EOM Report</button>
     </div>
         <h3>EOM Stats</h3>
-        <p>Your ads were clicked on <span id="paidStatsAdClicksOutput"></span> times, up <span id="paidStatsAdClickPercentage"></span>%</p>
-        <p>Your ads were shown <span id="paidStatsAdImpressions"></span> times, up <span id="paidStatsAdImpressionPercentage"></span>%</p>
-        <p>Your average click-through rate was <span id="paidStatsCTR"></span>%</p>
-        <p>Your ads generated <span id="paidStatsAdConversions"></span> conversions, up <span id="paidStatsAdConversionsPercentage"></span>%</p>
-        <p>Your top ad was <span id="topAdCopy"></span></p>
-        <p>Your top ad had: <span id="topAdCopyClicks"></span> clicks</p>
-        <h3>EOM Message Report</h3>
-        <p id="paidEomOutput"></p>
+            <p>Google Ads Performance</p>
+            <p>Your ads were clicked on <span id="paidStatsAdClicksOutput"></span> times, <span id="paidStatsAdClickPercentage"></span>%</p>
+            <p>Your ads were shown <span id="paidStatsAdImpressions"></span> times, <span id="paidStatsAdImpressionPercentage"></span>%</p>
+            <p>Your average click-through rate was <span id="paidStatsCTR"></span>%</p>
+            <p>Your ads generated <span id="paidStatsAdConversions"></span> conversions, <span id="paidStatsAdConversionsPercentage"></span>%</p>
+        <h3>Top Keywords</h3>
+            <p><span>Top Performing keywords<br><span id="firstTopKeyword"></span> - <span id="firstTopKeywordClicks"></span> clicks<br><span id="secondTopKeyword"></span> - <span id="secondTopKeywordClicks"></span> clicks<br><span id="thirdTopKeyword"></span> - <span id="thirdTopKeywordClicks"></span> clicks<br><span id="fourthTopKeyword"></span> - <span id="fourthTopKeywordClicks"></span> clicks<br></p>
+        <h3>Ad Copy</h3>
+            <p>Your top ad was: <br> <span id="topAdCopy"></span><br><span id="topAdCopyDescription"></span></p>
+            <p>Your top ad had: <span id="topAdCopyClicks"></span> clicks</p>
+            <h3>EOM Message Report</h3>
+            <p id="paidEomOutput"></p>
 </section>
 <section>
     <h2>Tina's Email About Coronovirus</h2>
