@@ -22,7 +22,11 @@
 
 input {
     text-align: center;
-    margin: 0 0% 0 3%;
+    margin: 10px 0% 0 3%;
+}
+
+input:last-child {
+    margin: 0 0 10px 0;
 }
 
 .adjust-budget {
@@ -48,11 +52,11 @@ input {
     .headline > div:nth-last-child(1) {
         margin-left: 16.8%;
     }
-  }
+}
 
-  @media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
     .client div {
         margin: 0 4%;
-  }
+    }
 }
 

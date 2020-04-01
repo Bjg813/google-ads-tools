@@ -33,3 +33,13 @@ p {
     display: flex;
     justify-content: center;
 }
+
+.vertical-alignment {    
+    display: flex;
+    flex-direction: column;
+    padding: 0 46%;
+}
+
+#paidTopAdClicksInput {
+    margin-bottom: 10px;
+}
