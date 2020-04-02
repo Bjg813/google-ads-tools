@@ -1,5 +1,6 @@
 function eomReport() {
     // Model
+    // EOM input binding values
     const grantSpend = document.getElementById('grantsMonthSpend').value;
     const grantSpendPercentage = document.getElementById('grantMonthSpendPercentage').value;
     const paidMonth = document.getElementById('paidMonthInput').value;
@@ -22,12 +23,13 @@ function eomReport() {
     const fourthTopKeyword = document.getElementById('fourthTopKeywordInput').value;
     const fourthTopKeywordClicks = document.getElementById('fourthTopKeywordClicksInput').value;
 
-    // View
-    // Display eom message
+    // EOM message binding
     const eomMessage = 'Your Google Ad Grants account spent $' + grantSpend + ' in grant money, ' + grantSpendPercentage + '% from last month. In ' + paidMonth + ' your account had ' + paidImpressions + ' impressions, ' + paidImpressionsPercentage + '% and we recorded ' + paidAdClicks + ' ad clicks, ' + paidAdClickPercentage + '% from last month. We recorded ' + paidConversions + ' new conversions ' + paidConversionsPercentage + '%. Your top keyword was ' + '\"' + paidTopKeyword + '\"' + ' with ' + paidTopKeywordClicks + ' clicks. Your top search ad was ' + '\"' + paidTopAdCopy + '\"' + ' with ' + paidTopAdClicks + ' clicks. In the beginning of March we followed Google Ads COVID-19 recommendations by making sure all of your ads were sensitive to the current changing times, including taking out any mention of \"virus"\ in your ad copy and making sure your ads were not trying to take advantage of people during this current pandemic. We will keep monitoring your account. Let us know how we can better help you reach out to your audiences during these coming months.';
     
-    // Display eom stats
+    // View
+    // Display EOM message to website
     document.getElementById('paidEomOutput').innerHTML = eomMessage;
+    // Display EOM stats to website
     document.getElementById('paidStatsAdClicksOutput').innerHTML = paidAdClicks;
     document.getElementById('paidStatsAdClickPercentage').innerHTML = paidAdClickPercentage;
     document.getElementById('paidStatsAdImpressions').innerHTML = paidImpressions;
