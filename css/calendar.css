@@ -1,10 +1,5 @@
-:root {
-    --main-color: #0084a5;
-    --uptown-color: #a50031;
-}
-
 .calendar {
-    border: .1rem var(--uptown-color) solid;
+    border: .1rem var(--headline-color) solid;
     margin: 0 45% 0 45%;
 }
 
@@ -13,7 +8,7 @@
 }
 
 .calendar p span {
-    color: var(--uptown-color);
+    color: var(--headline-color);
     display: flex;
     justify-content: center;
 }

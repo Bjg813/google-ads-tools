@@ -1,6 +1,9 @@
 :root {
-    --main-color: #0084a5;
-    --uptown-color: #a50031;
+    --main-color: #0F9D58;
+    --uptown-color: #4285F4;
+    --headline-color: #F4B400;
+    --red: #DB4437;
+    --black: #000000;
 }
 
 body, span {
@@ -12,6 +15,7 @@ h2, h3 {
     text-align: center;
     font-family:'Montserrat', sans-serif;
     font-weight: 900;
+    color: var(--headline-color);
 }
 
 p {
@@ -44,10 +48,13 @@ p {
     margin-bottom: 10px;
 }
 
-#paidEomSubmitButton {
-    background-color: var(--uptown-color);
-    color: #ffffff;
-    padding: 5%;
+button {
+    background-color: var(--headline-color);
+    color: var(--black);
+    border: 2px solid var(--red);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 #topAdCopy {
@@ -56,4 +63,21 @@ p {
 
 .bold {
     font-weight: bold;
+}
+
+input {
+    text-align: center;
+    margin: 10px 0% 0 3%;
+    border: 2px solid var(--red);
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: var(--uptown-color);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input:last-child {
+    margin: 0 0 10px 0;
 }

@@ -20,27 +20,14 @@
     margin-left: 24.8%;
 }
 
-input {
-    text-align: center;
-    margin: 10px 0% 0 3%;
-}
-
-input:last-child {
-    margin: 0 0 10px 0;
-}
-
 .adjust-budget {
     margin: 0 5% 0 0;
 }
 
 .bg-secondary > button {
     margin: 1% 0 0 60%;
-    border: none;
-    color: #ffffff;
     text-align: center;
     text-decoration: none;
-    cursor: pointer;
-    background-color: var(--main-color);
 }
 
 .bg-secondary > button:hover, 
