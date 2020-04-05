@@ -81,3 +81,5 @@ const calendar = {
 document.getElementById('todaysDate').innerHTML = calendar.todaysMonth(calendar.getTodaysMonth()) + ' ' + calendar.todaysDate();
 document.getElementById('daysInMonth').innerHTML = calendar.daysInMonth();
 document.getElementById('daysLeftInMonth').innerHTML = calendar.daysLeftInMonth();
+
+// test
