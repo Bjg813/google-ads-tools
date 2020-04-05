@@ -17,7 +17,7 @@ function GoogleAdsClient(params) {
 // Client Constructor prototype method
 GoogleAdsClient.prototype.processBudget = function() {
     let budgetDifference = this.monthlyCost - documentId(this.currentCost).value;
-    let averageMonthlySpend = budgetDifference / daysLeftInMonth();
+    let averageMonthlySpend = budgetDifference / calendar.daysLeftInMonth();
     this.monthlyCost = Math.round(averageMonthlySpend * 100) / 100;
     this.displayMessage(this.monthlyCost);
 }
