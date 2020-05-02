@@ -26,7 +26,7 @@ function eomReport() {
     };
 
     // EOM message binding
-    const eomMessage = 'Your Google Ad Grants account spent $' + eom.grantSpend + ' in grant money, ' + eom.grantSpendPercentage + '% from last month. In ' + calendar.todaysMonth(calendar.getTodaysOneMonthBefore()) + ' your account had ' + eom.impressions + ' impressions, ' + eom.impressionPercentage + '% and we recorded ' + eom.clicks + ' ad clicks, ' + eom.clickPercentage + '% from last month. We recorded ' + eom.conversions + ' new conversions ' + eom.conversionPercentage + '%. Your top keyword was ' + '\"' + eom.topKeyword + '\"' + ' with ' + eom.topKeywordClicks + ' clicks. Your top search ad was ' + '\"' + eom.topAdHeadline + '\"' + ' with ' + eom.topAdClicks + ' clicks.';
+    const eomMessage = 'Your Google Ad Grants account spent $' + eom.grantSpend + ' in grant money, ' + eom.grantSpendPercentage + '% from last month. In ' + calendar.todaysMonth(calendar.getTodaysOneMonthBefore()) + ' your account had ' + eom.impressions + ' impressions, ' + eom.impressionPercentage + '% and we recorded ' + eom.clicks + ' ad clicks, ' + eom.clickPercentage + '% from last month. We recorded ' + eom.conversions + ' new conversions ' + eom.conversionPercentage + '%. Your top keyword was ' + '\"' + eom.topKeyword + '\"' + ' with ' + eom.topKeywordClicks + ' clicks. Your top search ad was ' + '\"' + eom.topAdHeadline + '\"' + ' with ' + eom.topAdClicks + ' clicks. Your ads are performing well, which is great! We will keep monitoring your account. Let us know if you have any questions or concerns.';
 
     // View
     // Display EOM message to website
@@ -38,10 +38,10 @@ function eomReport() {
     documentId('paidStatsAdImpressionPercentage').innerHTML = eom.impressionPercentage;
     documentId('paidStatsCTR').innerHTML = eom.clickThroughRate;
     documentId('paidStatsAdConversions').innerHTML = eom.conversions;
-    documentId('paidStatsAdConversionsPercentage').innerHTML = eom.conversions;
+    documentId('paidStatsAdConversionsPercentage').innerHTML = eom.conversionPercentage;
     documentId('topAdCopy').innerHTML = eom.topAdHeadline;
     documentId('topAdCopyDescription').innerHTML = eom.topAdDescription;
-    documentId('topAdCopyClicks').innerHTML = eom.paidTopAdClicks;
+    documentId('topAdCopyClicks').innerHTML = eom.topAdClicks;
     documentId('firstTopKeyword').innerHTML = eom.topKeyword;
     documentId('firstTopKeywordClicks').innerHTML = eom.topKeywordClicks;
     documentId('secondTopKeyword').innerHTML = eom.secondKeyword;
